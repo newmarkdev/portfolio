@@ -361,6 +361,9 @@ h3 {
 .blog-container img {
   max-width: 80%;
   margin-left: 30px;
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
 }
 
 .blog-post-card a,
