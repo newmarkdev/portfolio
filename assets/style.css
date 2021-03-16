@@ -457,15 +457,15 @@ a:link {
 }
 
 .icon-linkedin-highlight {
-  background-image: url("./assets/icon-linkedin-highlight2.svg");
+  background-image: url("./assets/icon-linkedin-highlight.svg");
 }
 
 .icon-stackoverflow-highlight {
-  background-image: url("./assets/icon-stackoverflow-highlight2.svg");
+  background-image: url("./assets/icon-stackoverflow-highlight.svg");
 }
 
 .icon-github-highlight {
-  background-image: url("./assets/icon-github-highlight2.svg");
+  background-image: url("./assets/icon-github-highlight.svg");
 }
 
 /* FOOTER */
