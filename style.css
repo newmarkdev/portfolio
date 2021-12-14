@@ -7,6 +7,8 @@
   --highlight2: rgb(247, 84, 84); 
 }
 
+
+
 *,
 *:before,
 *:after {
@@ -22,6 +24,11 @@ body {
   margin: 0;
   background-color: var(--white);
   font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
 }
 
 h1,
@@ -172,6 +179,12 @@ h2 {
   padding: 10px;
 }
 
+
+.summary-links a:hover {
+  color: var(--highlight);
+  text-decoration: underline;
+}
+
 .icon-p {
   padding: 5px;
 }
@@ -255,10 +268,10 @@ article a:hover {
   color: var(--highlight);
 }
 
-article a:link,
+/* article a:link,
 a:visited {
   color: black;
-}
+} */
 
 .container-overlay {
   position: relative;
