@@ -2,11 +2,22 @@
 :root {
   --black: #272727;
   --white: #ffffff;
-  --grey: #f6f4fc;
+  --grey:#f8f5f5da;
   --highlight: #00917c;
   --highlight2: rgb(247, 84, 84); 
+  --text: #272727;
+  --title: #fffdfd;
+  --icon-outline: #ffffff;
+  --title-bg: #413f3f;
 }
 
+.dark_mode{
+  --black: #fff;
+  --white: #272727;
+  --grey:#575656da;
+  --text: #fff;
+  --title: #fffdfd;
+}
 
 
 *,
@@ -31,6 +42,10 @@ a {
   color: var(--black);
 }
 
+p {
+  color: var(--black);
+}
+
 h1,
 h2,
 h3,
@@ -38,6 +53,7 @@ h4,
 h5,
 h6 {
   font-family: "Montserrat", sans-serif;
+  color:var(--title);
 }
 
 /*** HEADER ***/
@@ -76,13 +92,15 @@ header {
 
 .icon-linkedin,
 .icon-github,
-.icon-stackoverflow {
+.icon-stackoverflow,
+.icon-darkmode {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
   cursor: pointer;
-  border: var(--white) solid 2px;
+  border: var(--icon-outline) solid 2px;
   border-radius: 50%;
+  
 }
 
 .icon-linkedin:hover,
@@ -105,7 +123,7 @@ header {
 
 header .icon-linkedin,
 header .icon-stackoverflow,
-header .icon-github {
+header .icon-github{
   width: 100%;
   height: 100%;
 }
@@ -121,6 +139,11 @@ header .icon-github {
 .icon-github {
   background-image: url("./assets/github.svg");
 }
+
+.icon-darkmode {
+  background-image: url("./assets/darkmode.png");
+}
+
 
 .header-name-description {
   display: flex;
@@ -229,9 +252,8 @@ h4 {
   font-size: 22px;
   font-weight: bold;
   padding: 5px;
-  background-color: var(--black);
+  background-color: var(--title-bg);
   border-radius: 8px;
-  color: var(--white);
 }
 
 /*** FEATURED PROJECTS ***/
@@ -495,7 +517,7 @@ footer {
 h6 {
   font-family: "Montserrat", sans-serif;
   font-size: 21px;
-  color: var(--white);
+  color: var(--title);
   font-weight: bold;
   margin: 0;
   padding-top: 10px;
